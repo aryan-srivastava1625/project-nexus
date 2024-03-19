@@ -103,6 +103,11 @@ header{
     
 }
 
+.wrapper.active{
+    height: 520px;
+
+}
+
 .wrapper .form-box{
     width: 100%;
     padding:40px;
@@ -112,6 +117,10 @@ header{
     /*display: none; */
 }
 
+.wrapper.active .form-box.login{
+    position: absolute;
+    transform: translateX(-400px);
+}
 
 .wrapper .form-box.Signup{
     position: absolute;
