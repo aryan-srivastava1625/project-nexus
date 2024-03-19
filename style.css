@@ -98,7 +98,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow:hidden; */
+    overflow:hidden;
+    transform: scale(0);
     transition: height .2s ease;
     
 }
@@ -114,7 +115,8 @@ header{
 }
 
 .wrapper .form-box.login{
-    /*display: none; */
+    transition: transform .18s ease;
+    transform: translateX(0);
 }
 
 .wrapper.active .form-box.login{
@@ -124,8 +126,14 @@ header{
 
 .wrapper .form-box.Signup{
     position: absolute;
+    transition: none;
     transform: translate(400px);
     
+}
+
+.wrapper.active .form-box.Signup{
+    transition: transform .18s ease;
+    transform: translateX(0);
 }
 
 
