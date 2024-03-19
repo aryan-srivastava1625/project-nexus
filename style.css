@@ -98,12 +98,47 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* overflow:hidden; */
+    transition: height .2s ease;
+    
 }
 
 .wrapper .form-box{
     width: 100%;
     padding:40px;
 }
+
+.wrapper .form-box.login{
+    /*display: none; */
+}
+
+
+.wrapper .form-box.Signup{
+    position: absolute;
+    transform: translate(400px);
+    
+}
+
+
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 35px;
+    background: #6d9b7e;
+    font-size:2em;
+    display:flex;
+    justify-content: center;
+    align-items:centre;
+    border-bottom-left-radius:20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
 
 .form-box h2 {
     font-size: 2em;
